@@ -1,3 +1,7 @@
+# Muhammad Qaffal Al Fifaiz
+# H071231032
+# Tugas Praktikum Pekan Kedua
+
 mskn = input("Pilih golongan:\n1. R1\n2. R2\n3. R3\n4. B2\n5. B3\n6. I3\n7. P1\n")
 if mskn.isdigit():
     gol = int(mskn)
