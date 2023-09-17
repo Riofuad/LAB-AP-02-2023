@@ -2,18 +2,17 @@
 # H071231032
 # Tugas Praktikum Pekan Kedua
 
+print("\nPencocokan Organisme\n====================")
+
 a = input("\nMasukkan inputan pertama: ")
 a = a.lower()
-
 if a.isalpha():
     b = input("Masukkan inputan kedua: ")
     b = b.lower()
     if b.isalpha():
         c = input("Masukkan inputan ketiga: ")
         c = c.lower()
-        print()
         if c.isalpha():
-
             match a:
                 case 'vertebrado':
                     match b:
@@ -24,7 +23,7 @@ if a.isalpha():
                                 case 'onivoro':
                                     print('pomba')
                                 case _:
-                                    print('Invalid input.')
+                                    print('\nInvalid input.\n')
                         case 'mamifero':
                             match c:
                                 case 'onivoro':
@@ -32,9 +31,9 @@ if a.isalpha():
                                 case 'herbivoro':
                                     print('vaca')
                                 case _:
-                                    print('Invalid input.')
+                                    print('\nInvalid input.\n')
                         case _:
-                            print('Invalid input.')
+                            print('\nInvalid input.\n')
                 case 'invertebrado':
                     match b:
                         case 'inseto':
@@ -44,7 +43,7 @@ if a.isalpha():
                                 case 'herbivoro':
                                     print('lagarta')
                                 case _:
-                                    print('Invalid input.')
+                                    print('\nInvalid input.\n')
                         case 'anelideo':
                             match c:
                                 case 'hematofago':
@@ -52,14 +51,14 @@ if a.isalpha():
                                 case 'onivoro':
                                     print('minhoca')
                                 case _:
-                                    print('Invalid input.')
+                                    print('\nInvalid input.\n')
                         case _:
-                            print('Invalid input.')
+                            print('\nInvalid input.\n')
                 case _:
-                    print('Invalid input.')
+                    print('\nInvalid input.\n')
         else:
-            print('Invalid input.')
+            print('\nInvalid input.\n')
     else:
-        print('Invalid input.')
+        print('\nInvalid input.\n')
 else:
-    print('Invalid input.')
+    print('\nInvalid input.\n')

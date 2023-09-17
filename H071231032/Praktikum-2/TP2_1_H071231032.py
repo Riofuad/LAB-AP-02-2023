@@ -1,7 +1,7 @@
 # Muhammad Qaffal Al Fifaiz
 # H071231032
 # Tugas Praktikum Pekan Kedua
-
+print("\nMenghitung BMI\n==============")
 masukan = input("\nPilih jenis kelamin Anda:\n1. Pria\n2. Wanita\n")
 if masukan.isdigit():
     gender = int(masukan)
@@ -12,35 +12,35 @@ if masukan.isdigit():
                 tinggiCM = float(input("\nMasukkan tinggi badan Anda (cm): "))
                 berat = float(input("Masukkan berat badan Anda (kg): "))
                 tinggiM = tinggiCM / 100
-                BMI = berat/(tinggiM**2)
+                bmi = berat/(tinggiM**2)
                 ket = ""
-                if BMI < 18:
+                if bmi < 18:
                     ket += "Underweight"
-                elif 18 <= BMI < 24:
+                elif 18 <= bmi < 24:
                     ket += "Normal"
-                elif 24 <= BMI < 27:
+                elif 24 <= bmi < 27:
                     ket += "Overweight"
                 else:
                     ket += "Obese"
             
-                print(f"\nAnda tergolong {ket} dengan BMI {BMI:.2f}")
+                print(f"\nAnda tergolong {ket} dengan BMI {bmi:.2f}")
 
             case 2:
                 tinggiCM = float(input("\nMasukkan tinggi badan Anda (cm): "))
                 berat = float(input("Masukkan berat badan Anda (kg): "))
                 tinggiM = tinggiCM / 100
-                BMI = berat/(tinggiM**2)
+                bmi = berat/(tinggiM**2)
                 ket = ""
-                if BMI < 17:
+                if bmi < 17:
                     ket += "Underweight"
-                elif 17 <= BMI < 24:
+                elif 17 <= bmi < 24:
                     ket += "Normal"
-                elif 24 <= BMI < 28:
+                elif 24 <= bmi < 28:
                     ket += "Overweight"
                 else:
                     ket += "Obese"
 
-                print(f"\nAnda tergolong {ket} dengan BMI {BMI:.2f}")
+                print(f"\nAnda tergolong {ket} dengan BMI {bmi:.2f}")
     
             case _:
                 print("Invalid input.")
