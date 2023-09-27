@@ -12,4 +12,3 @@ luas = 1/2 * sisi_x * sisi_y
 print(f"Panjang sisi Z: {sisi_z:.2f}")  
 print(f"Luas segitiga XYZ:{luas:.2F}")
 print(f"Keliling segitiga XYZ:{keliling:.2f}")
-
