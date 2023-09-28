@@ -1,6 +1,9 @@
 golongan = input("Golongan =").upper()
 daya = int(input("Daya ="))
 pemakaian = int(input("Pemakaian ="))
+
+tagihan = 0
+
 match (golongan, daya) :
     case ("R1",900) :
         tagihan = pemakaian * 1352
@@ -8,7 +11,7 @@ match (golongan, daya) :
         tagihan = pemakaian * 1444.70
     case ("R1",2200) :
         tagihan = pemakaian * 1444.70
-    case ("R2",_) if 1300 <= daya <=5500 :
+    case ("R2",_) if 3500 <= daya <=5500 :
         tagihan = pemakaian * 1699.53
     case ("R3",_) if daya >= 6600 :
         tagihan = pemakaian * 1699.53
@@ -23,4 +26,5 @@ match (golongan, daya) :
     case _: 
         print("Data tidak valid")
 
-print(f'Jumlah tagihan anda : Rp, {round(tagihan, 2):,}'.replace('.','|').replace(',','.').replace('|', ','))
+if tagihan != 0 :
+    print(f'Jumlah tagihan anda : Rp, {round(tagihan, 2):,}'.replace('.','|').replace(',','.').replace('|', ','))
