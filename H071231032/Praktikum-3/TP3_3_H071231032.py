@@ -27,3 +27,4 @@ while True:
             
     except ValueError:
         print("\nInputan harus berupa angka.\n")
+        break
