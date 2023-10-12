@@ -1,4 +1,7 @@
+
 karakter = input (" masukkan jenis karakter : ")
+ #
+
 
 # Menampilkan hasil
 print("Huruf Kapital?: ", "A" <= karakter <= "Z")
