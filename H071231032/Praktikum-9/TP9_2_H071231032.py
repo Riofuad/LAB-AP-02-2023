@@ -21,7 +21,3 @@ class Mahasiswa:
             print('Predikat  : Cukup')
         else:
             print('Predikat  : Kurang')
-
-mahasiswa = Mahasiswa('andi jamal', 'H071191001', 'Sistem informasi', 2.5)
-mahasiswa.tampilkanInfo()
-mahasiswa.hitungPredikat()
