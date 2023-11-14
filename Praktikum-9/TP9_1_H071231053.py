@@ -49,7 +49,7 @@ class Hero(Human):
         return self._health
 
     def attack(self, target):
-        target.getHealth(target.getHealth() - self._power)
+        target.setHealth(target.getHealth() - self._power)
 
 
 class Warrior(Hero):
