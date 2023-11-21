@@ -1,28 +1,27 @@
 from abc import ABC, abstractmethod
 
-class mobil(ABC) :
-    def _init_(self,merk,kecepatan,jarak):
-        self._merk = merk
-        self._kecepatan = kecepatan
-        self._jarak = jarak
-    def info(self):
-        print(f"mobil {self._merk} dengan kecepatan {self._kecepatan} km/jam dapat bergerak sejauh {self._jarak} km")
-#class awalan besar
-class bmw(mobil):
-    def _init_(self,merk,kecepatan,jarak):
-        super(). _init_(merk,kecepatan,jarak)
-    def bensin(self):
-        print("jenis bahan bakar : Premium")
-class pajero(mobil):
-    def _init_(self,merk,kecepatan,jarak):
-        super(). _init_(merk,kecepatan,jarak)
-    def bensin(self):
-        print("jenis bahan bakar : Solar")
+class Mobil(ABC):
+    def __init__(self,nama):
+        self.__nama = nama
+    @abstractmethod
+    def suara(self):
+        pass
+    def get_nama(self):
+        return self.__nama
+    def set_nama(self,nama):
+        self.__nama = nama
         
-mobil1 = bmw("bmw",100,500)
-mobil1.info()
-mobil1.bensin()
+    
+class Bmw(Mobil):
+    def suara(self):
+        return "bang aku bole ngebut ga?"
 
-mobil2 = pajero("pajero",120,600)
-mobil2.info()
-mobil2.bensin()
+class Koenigsegg(Mobil):
+    def suara(self):
+        return "aku mah masi pemula (439km/h)"
+
+B = Bmw("Bmw ngeeng I8 gon brom brom")
+K = Koenigsegg("gwehj ketika agera berkutik")
+
+print(f'{B.suara()}')
+print(f'{K.suara()}')
